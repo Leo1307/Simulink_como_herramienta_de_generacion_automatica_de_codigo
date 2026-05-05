@@ -12,7 +12,7 @@ En caso de no tener sesión se debe registrar usando el correo estudiantil, pues
 
 Una vez estando en el menú principal, se selecciona la opción de "instalar Matlab", se abrirá una nueva ventana e inmediatamente reconoce el sistema operativo, por lo cual únicamente se le da a "Descargar para Linux".
 
-[Iniciar sesión](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/Instalar_matlab.png)
+![Descargar](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/Instalar_matlab.png)
 
 ## Paso 3: Instalación
 
