@@ -1,62 +1,91 @@
-# Instalación de MATLAB en Linux
+# Instalación de extensiones
 
-El objetivo de este repositorio es facilitar la instalación de Matlab en Linux
+## Paso 1: entrar a "Add-Ons"
 
-## Paso 1: Iniciar sesión en MathWorks
+![Add-Ons]()
 
-[Iniciar sesión](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml)
+## Paso 2: Buscar "Simulink Support Package for Arduino Hardware"
 
-En caso de no tener sesión se debe registrar usando el correo estudiantil, puesto que el TEC tiene las credenciales activas.
+Una vez encontrado, presionar "install" para descargar el Simulink Support Package for Arduino Hardware
 
-## Paso 2: Descargar MATLAB
+![Simulink Support Package for Arduino Hardware]()
 
-Una vez estando en el menú principal, se selecciona la opción de "instalar Matlab", se abrirá una nueva ventana e inmediatamente reconoce el sistema operativo, por lo cual únicamente se le da a "Descargar para Linux".
+## Paso 3: Configuración
 
-![Descargar](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/Instalar_matlab.png)
+❌ Error: Download failed / Permission denied / cannot open port
+Este error ocurre cuando Linux no tiene permisos para comunicarse con la placa Arduino mediante el puerto serial.
+Normalmente sucede aunque el código compile correctamente.
 
-## Paso 3: Instalación
+✅ Solución paso a paso
+🔍 Paso 1: Verificar que el sistema detecte el Arduino
+Conectar la placa Arduino y ejecutar:
+bashls /dev/ttyACM*
+✅ Resultado esperado
+Debe aparecer algo similar a:
+/dev/ttyACM0
+❌ Si no aparece
+Posibles causas:
 
-Luego, extraer el archivo .zip que se descargó (puede extraerlo en la ubicación de su preferencia).
+Cable USB defectuoso
+Cable solo de carga (sin datos)
+Puerto USB con problemas
+La placa no está conectada correctamente
 
-Abra la terminal estando en el folder extraído y ejecute el comando
+🔧 Solución:
 
-sudo ./install
+Desconectar y volver a conectar el Arduino
+Probar otro puerto USB
+Probar otro cable USB
 
-A continuación, vuelva a iniciar sesión en la ventana emergente, acepte todos los acuerdos, seleccione la ubicación de instalación de su preferencia (perfectamente puede dejar la que viene por defecto) y colocamos los siguientes checks
+
+🔐 Paso 2: Verificar permisos del usuario
+Ejecutar:
+bashid
+✅ Resultado esperado
+Debe aparecer el grupo:
+dialout
+Ejemplo:
+groups=1000(usuario),20(dialout),...
+❌ Si dialout NO aparece
+Continuar con el siguiente paso.
+
+🛠️ Paso 3: Agregar el usuario al grupo dialout
+Ejecutar:
+bashsudo usermod -aG dialout $USER
+✅ Resultado esperado
+El comando no mostrará errores.
+
+🔄 Paso 4: Aplicar los cambios
+Reiniciar sesión o reiniciar el sistema completo.
+Luego volver a ejecutar:
+bashid
+✅ Resultado esperado
+Ahora debe aparecer:
+dialout
+
+⚙️ Paso 5: Verificar permisos del puerto serial
+Ejecutar:
+bashls -l /dev/ttyACM0
+✅ Resultado esperado
+Debe aparecer algo similar a:
+crw-rw---- 1 root dialout ...
+Lo importante es:
+
+Grupo: dialout
+Permisos: rw
+
+
+🔌 Paso 6: Verificar que ningún proceso esté usando el puerto
+Ejecutar:
+bashlsof /dev/ttyACM0
+✅ Resultado esperado
+No debe aparecer ninguna salida.
+❌ Si aparece algún proceso
+Significa que otro programa está usando el puerto serial.
+🔧 Solución:
+Cerrar cualquier programa que pueda estar usando el Arduino, por ejemplo:
 
 MATLAB
 Simulink
-Control System Toolbox
-Embedded Coder
-
-![Checks 1](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/checks1.png)
-![Checks 2](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/checks2.png)
-![Checks 3](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/checks3.png)
-
-Aparecerá una ventana emergente indicando que MATLAB Coder requiere añadir un par de cosas, presione "Add".
-
-Recomendación: seleccionar "Create symbolic links to MATLAB scripts in: " para que cree un acceso directo en la terminal.
-
-Finalmente haga click en "Begin Install".
-
-## Paso 3.5: Espacio y Duración
-
-Se instalará aproximadamente 8.73 GB, la duración dependerá de la conexión a internet que tengan en su momento
-
-## Paso 4: Credenciales
-
-Nuevamente hay que colocar las credenciales, en caso de no emerger la ventana de matlab en la terminal coloque:
-
-matlab
-
-# Materiales para el minitaller
-
-- Laptop 
-- Arduino
-- Protoboard
-- Jumps
-- 3 resistencias de 1 kΩ
-- 1 Led rojo
-- 1 Led verde
-- 1 Led (De cualquier otro color)
-  
+Monitor serial
+IDEs de Arduino
