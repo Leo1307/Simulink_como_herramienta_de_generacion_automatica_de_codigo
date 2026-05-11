@@ -38,6 +38,8 @@ Aparecerá una ventana emergente indicando que MATLAB Coder requiere añadir un 
 
 Recomendación: seleccionar "Create symbolic links to MATLAB scripts in: " para que cree un acceso directo en la terminal.
 
+![Atajo de terminal](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Atajo%20de%20terminal.png)
+
 Finalmente haga click en "Begin Install".
 
 ## Paso 3.5: Espacio y Duración
@@ -46,10 +48,13 @@ Se instalará aproximadamente 8.73 GB, la duración dependerá de la conexión a
 
 ## Paso 4: Credenciales
 
-Nuevamente hay que colocar las credenciales, en caso de no emerger la ventana de matlab en la terminal coloque:
+Nuevamente hay que colocar las credenciales, para abrir matlab coloque en la terminal:
+
 ```bash
 matlab
 ```
+nota: No importa donde se encuentre, al escribir "matlab" se abrira el programa.
+
 # Materiales para el minitaller
 
 - Laptop 
