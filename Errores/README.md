@@ -2,7 +2,7 @@
 
 En caso de abrir matlab e inmediatamente se cierra, es posible que suceda por un error de comunicación, este error se demuestra en la siguiente figura.
 
-[Error 5201]()
+![Error 5201](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/error%205201.png)
 
 Para solventarlo, siga los siguientes pasos
 
