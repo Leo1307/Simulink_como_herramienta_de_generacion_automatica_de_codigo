@@ -16,7 +16,15 @@ Estando en el menú principal, se selecciona la opción de "instalar Matlab", se
 
 ## Paso 3: Instalación
 
-Luego, extraer el archivo .zip que se descargó (puede extraerlo en la ubicación de su preferencia).
+Puede colocar lo siguiente en una terminal estando en el mismo folder que el .zip
+
+```bash
+    unzip matlab_R2026a_Linux.zip
+    cd matlab_R2026a_Linux
+    sudo ./install
+```
+
+O puede extraer el archivo .zip que se descargó (puede extraerlo en la ubicación de su preferencia).
 
 Abra la terminal estando en el folder extraído y ejecute el comando
 

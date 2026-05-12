@@ -1,12 +1,18 @@
-# Instalación de MATLAB en Linux
+# Instalación de dependencias faltantes
 
-El objetivo de este repositorio es facilitar la instalación de Matlab en Linux
+## Paso 1: Instalar Simulink Support Package for Arduino Hardware
 
-## Paso 1: Iniciar sesión en MathWorks
+Click en add-ons
 
-[Iniciar sesión](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml)
+![add-ons]()
 
-En caso de no tener sesión se debe registrar usando el correo estudiantil, puesto que el TEC tiene las credenciales activas.
+En el buscador hay que colocar "Simulink Support Package for Arduino Hardware"
+
+![Simulink Support Package for Arduino Hardware]()
+
+Click en "Install", luego acepte los acuerdo y nuevamente "Install".
+
+Nota: Amerita reiniciar MATLAB, por lo que seleccione "Set up now".
 
 ## Paso 2: Descargar MATLAB
 
