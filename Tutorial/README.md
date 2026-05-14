@@ -102,8 +102,6 @@ Vaya a "Hardware implementation" y en "Harware board" seleccione su arduino, tam
 
 ![Hardware implementation](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/11.png)
 
-![Puerto](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Puerto.png)
-
 En solver coloque lo siguiente
 
 ![Solver](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/12.png)
