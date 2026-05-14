@@ -98,7 +98,7 @@ Presione Model Setting
 
 ![Model Setting](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/10.png)
 
-Vaya a Hardware implementation y en Harware board seleccione su arduino, tambien tenemos que aasegurarnos de que el puerto donde esta conectado el arduino este seleccionado.
+Vaya a "Hardware implementation" y en "Harware board" seleccione su arduino, tambien tenemos que aasegurarnos de que el puerto donde esta conectado el arduino este seleccionado.
 
 ![Hardware implementation](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/11.png)
 
