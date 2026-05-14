@@ -102,7 +102,7 @@ Vaya a Hardware implementation y en Harware board seleccione su arduino, tambien
 
 ![Hardware implementation](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/11.png)
 
-![Puerto]()
+![Puerto](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Puerto.png)
 
 En solver coloque lo siguiente
 
@@ -317,7 +317,7 @@ end
 
 Para observar el código generado haga click en embedded coder en apps
 
-![Coder]()
+![Coder](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Coder.png)
 
 Para generar y cargar el codigo en arduino vaya a Harware y presione "Build, Deploy & Start"
 
