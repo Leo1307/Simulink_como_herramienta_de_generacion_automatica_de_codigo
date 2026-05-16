@@ -119,7 +119,7 @@ Al finalizarlo, cierre la ventana y en el menu principal de MATLAB Coder Onramp 
 
 Finalmente, haga click en compartir y coloque el correo del profe (Debe ser el correo con el que profe esta inscrito en matlab)
 
-[Compartir](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Compartir.png)
+![Compartir](https://github.com/Leo1307/Simulink_como_herramienta_de_generacion_automatica_de_codigo/blob/main/Fig/Compartir.png)
 
 
 
