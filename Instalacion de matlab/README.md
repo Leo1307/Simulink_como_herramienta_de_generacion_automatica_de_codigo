@@ -37,6 +37,7 @@ MATLAB
 Simulink
 Control System Toolbox
 Embedded Coder
+Simulink Coder
 ```
 ![Checks 1](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/checks1.png)
 ![Checks 2](https://github.com/Leo1307/Instalaci-n_de_Matlab/blob/main/Fig/checks2.png)
