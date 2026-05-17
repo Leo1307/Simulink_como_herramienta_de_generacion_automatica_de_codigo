@@ -44,45 +44,45 @@ Este error ocurre cuando Linux no tiene permisos para comunicarse con la placa A
 Normalmente sucede aunque el código compile correctamente.
 
 Solución 1
-    Verificar que el sistema detecte el Arduino
-
-    Conectar la placa Arduino y ejecutar:
+Verificar que el sistema detecte el Arduino
+Conectar la placa Arduino y ejecutar:
     ```bash
     ls /dev/ttyACM*
     ```
-    Resultado esperado
-    Debe aparecer algo similar a:
+Resultado esperado
+Debe aparecer algo similar a:
     
-    ```
+    ```bash
     /dev/ttyACM0
     ```
-    Si no aparece las posibles causas son:
+    
+Si no aparece las posibles causas son:
 
-    * Cable USB defectuoso
-    * Cable solo de carga 
-    * Puerto USB con problemas
-    * La placa no está conectada correctamente
+ * Cable USB defectuoso
+ * Cable solo de carga 
+ * Puerto USB con problemas
+ * La placa no está conectada correctamente
 
 Solución 2
 
-    Conceder permisos del usuario
+Conceder permisos del usuario
 
-    Ejecutar:
+Ejecutar:
 
     ```bash
     sudo usermod -aG dialout $USER
     ```
 
-    Luego reiniciar sesión o reiniciar el sistema completo.
+Luego reiniciar sesión o reiniciar el sistema completo.
 
-    Si ejecuta
+Si ejecuta
 
     ```bash
     id
     ```
-    Debe aparecer:
+Debe aparecer:
 
-    dialout
+dialout
 
 2. Paso ambas pruebas
 
